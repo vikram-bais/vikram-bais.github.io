@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/vikram-bais/static/css/main.15a5cd92.css",
-    "main.js": "/vikram-bais/static/js/main.89494f4d.js",
-    "index.html": "/vikram-bais/index.html",
-    "main.15a5cd92.css.map": "/vikram-bais/static/css/main.15a5cd92.css.map",
-    "main.89494f4d.js.map": "/vikram-bais/static/js/main.89494f4d.js.map"
+    "main.css": "/vikram-bais.github.io/static/css/main.15a5cd92.css",
+    "main.js": "/vikram-bais.github.io/static/js/main.89494f4d.js",
+    "index.html": "/vikram-bais.github.io/index.html",
+    "main.15a5cd92.css.map": "/vikram-bais.github.io/static/css/main.15a5cd92.css.map",
+    "main.89494f4d.js.map": "/vikram-bais.github.io/static/js/main.89494f4d.js.map"
   },
   "entrypoints": [
     "static/css/main.15a5cd92.css",
