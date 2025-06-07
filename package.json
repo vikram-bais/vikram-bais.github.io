@@ -1,7 +1,7 @@
 {
   "name": "vikram-bais.github.io",
   "version": "0.1.0",
-  "homepage": "https://vikram-bais.github.io/vikram-bais",
+  "homepage": "https://vikram-bais.github.io/vikram-bais.github.io",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
