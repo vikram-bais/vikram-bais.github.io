@@ -51,7 +51,7 @@ function About() {
             GitHub
           </a>
           <a
-            href="https://drive.google.com/file/d/1OjzZepnJI7-43JJ-ex5eqvGZ7cN6BX7L/view?usp=sharing"
+            href="https://drive.google.com/file/d/1EV8VD00SrGKvowx_JCJ5699W_v9gaq6t/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="global-button px-6 py-3 rounded-full font-semibold hover:scale-105 transition"
