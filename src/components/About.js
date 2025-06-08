@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../App.css'
 
@@ -10,7 +11,7 @@ function About() {
         <img
           src="/img/pro.jpeg"
           alt="Profile"
-          className="w-50 h-50 rounded-full mb-4"
+          className="w-60 h-60 rounded-full mb-4"
         />
         <h2 className="text-2xl font-bold global-title-color text-center mb-8">Vikram Bais</h2>
         <p className="text-lg text-gray-300 text-center max-w-2xl">

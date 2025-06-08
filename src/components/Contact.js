@@ -18,10 +18,10 @@ function Contact() {
     e.preventDefault();
     emailjs
       .send(
-        'service_3udk18o', // Replace with your EmailJS service ID
-        'template_3n4gqqc', // Replace with your EmailJS template ID
+        process.env.REACT_APP_EMAILJS_SERVICE_ID, // Replace with your EmailJS service ID
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Replace with your EmailJS template ID
         formData,
-        'kdQL5dEXbKuonbmbe' // Replace with your EmailJS public key
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Replace with your EmailJS public key
       )
       .then(
         () => {
