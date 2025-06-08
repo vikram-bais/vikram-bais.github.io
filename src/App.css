@@ -1,24 +1,48 @@
-/* Custom styles if needed */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .bg-animated-gradient {
-    background: linear-gradient(45deg, #1f2937, #374151, #14244f, #172231);
+  background: linear-gradient(45deg, #1f2937, #203d73, #1f2937, #1f2937);
+  background-size: 400% 400%;
+  animation: gradientFade 10s ease infinite;
+}
 
-    background-size: 400% 400%;
-    animation: gradientFade 10s ease infinite;
+@keyframes gradientFade {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes gradientFade {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.global-title-color {
+  color: #3b82f6;
+}
+
+.navbar-bg-color {
+  background-color: #1f2937;
+}
+
+
+.background-card {
+  background-color: #414f65;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  transition: transform 0.15s ease-in-out;
+}
+.background-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+.global-button {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  color: white;
+}

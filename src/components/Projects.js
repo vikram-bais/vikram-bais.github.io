@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 function Projects() {
   const projects = [
@@ -17,10 +18,10 @@ function Projects() {
 
   return (
     <section id="projects" className="py-20 max-w-6xl mx-auto px-4">
-      <h2 className="text-4xl font-bold text-blue-500 text-center mb-8">Projects</h2>
+      <h2 className="text-4xl font-bold global-title-color text-center mb-8">Projects</h2>
       <div className="py-10 grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
-          <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-md hover:scale-105 transition">
+          <div key={index} className="background-card p-6">
             {project.image ? (
               <img
                 src={project.image}
@@ -40,7 +41,7 @@ function Projects() {
               {project.technologies.map((tech, techIndex) => (
                 <span
                   key={techIndex}
-                  className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm"
+                  className="global-button px-3 py-1 rounded-full text-sm"
                 >
                   {tech}
                 </span>
@@ -53,7 +54,7 @@ function Projects() {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline mt-4 inline-block"
+              className="global-title-color hover:underline mt-4 inline-block"
             >
               View Project
             </a>) : (
@@ -69,47 +70,3 @@ function Projects() {
 }
 
 export default Projects;
-
-// import React from 'react';
-
-// function Projects() {
-//   const projects = [
-//     {
-//       title: 'E-Commerce Platform',
-//       description: 'A full-stack e-commerce app built with React, Node.js, and MongoDB. Features include user authentication, product filtering, and secure payments.',
-//       link: 'https://github.com/yourusername/ecommerce',
-//       image: 'https://via.placeholder.com/300x200',
-//     },
-//     {
-//       title: 'Task Manager',
-//       description: 'A task management app with drag-and-drop functionality using React and Firebase. Supports real-time updates and user collaboration.',
-//       link: 'https://github.com/yourusername/task-manager',
-//       image: 'https://via.placeholder.com/300x200',
-//     },
-//   ];
-
-//   return (
-//     <section id="projects" className="py-20 max-w-6xl mx-auto px-4 bg-gray-800">
-//       <h2 className="text-4xl font-bold text-blue-500 text-center mb-8">Projects</h2>
-//       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-//         {projects.map((project, index) => (
-//           <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-md hover:scale-105 transition">
-//             <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded mb-4" />
-//             <h3 className="text-2xl font-semibold">{project.title}</h3>
-//             <p className="text-gray-300 mt-2">{project.description}</p>
-//             <a
-//               href={project.link}
-//               target="_blank"
-//               rel="noopener noreferrer"
-//               className="text-blue-500 hover:underline mt-4 inline-block"
-//             >
-//               View Project
-//             </a>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Projects;

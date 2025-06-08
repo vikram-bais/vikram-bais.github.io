@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import '../App.css'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ function Contact() {
 
   return (
     <section id="contact" className="py-20 max-w-6xl mx-auto px-4 bg-gray-800">
-      <h2 className="text-4xl font-bold text-blue-500 text-center mb-8">Contact Me</h2>
+      <h2 className="text-4xl font-bold global-title-color text-center mb-8">Contact Me</h2>
       <form onSubmit={handleSubmit} className="py-10 max-w-md mx-auto space-y-4">
         <input
           type="text"
@@ -71,7 +72,7 @@ function Contact() {
           Send Message
         </button>
       </form>
-      {status && <p className="text-center mt-4 text-blue-500">{status}</p>}
+      {status && <p className="text-center mt-4 global-title-color">{status}</p>}
     </section>
   );
 }

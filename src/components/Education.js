@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css'
 
 function Education() {
     const education = [
@@ -12,10 +13,10 @@ function Education() {
       
   return (
     <section id="education" className="py-20 max-w-6xl mx-auto px-4">
-      <h2 className="text-4xl font-bold text-blue-500 text-center mb-8">Education</h2>
+      <h2 className="text-4xl font-bold global-title-color text-center mb-8">Education</h2>
       <div className="py-10 space-y-6">
         {education.map((edu, index) => (
-          <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-md hover:scale-105 transition">
+          <div key={index} className="background-card p-6">
             <h3 className="text-2xl font-semibold">{edu.degree}</h3>
             <p className="text-lg text-blue-300">{edu.institution} | {edu.period}</p>
             <p className="text-gray-300 mt-2">{edu.description}</p>

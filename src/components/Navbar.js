@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import '../App.css';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,9 +10,9 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-gray-800 shadow-md z-10">
+    <nav className="fixed top-0 w-full navbar-bg-color shadow-md z-10">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-blue-500">Vikram Bais</h1>
+        <h1 className="text-2xl font-bold global-title-color">Vikram Bais</h1>
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
           {['about', 'experience', 'skills', 'projects', 'education', 'contact'].map((section) => (
@@ -20,8 +21,8 @@ function Navbar() {
                 to={section}
                 smooth={true}
                 duration={500}
-                className="text-lg capitalize cursor-pointer hover:text-blue-500 transition-colors"
-                activeClass="text-blue-500  border-blue-500"
+                className="text-lg capitalize cursor-pointer hover:global-title-color transition-colors"
+                activeClass="global-title-color  border-blue-500"
                 spy={true}
               >
                 {section}
@@ -31,7 +32,7 @@ function Navbar() {
         </ul>
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-blue-500 focus:outline-none"
+          className="md:hidden global-title-color focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -69,8 +70,8 @@ function Navbar() {
                 to={section}
                 smooth={true}
                 duration={500}
-                className="text-lg capitalize cursor-pointer hover:text-blue-500 transition-colors"
-                activeClass="text-blue-500 border-b-2 border-blue-500"
+                className="text-lg capitalize cursor-pointer hover:global-title-color transition-colors"
+                activeClass="global-title-color border-b-2 border-blue-500"
                 spy={true}
                 onClick={toggleMenu}
               >
@@ -93,7 +94,7 @@ export default Navbar;
 //   return (
 //     <nav className="fixed top-0 w-full bg-gray-800 shadow-md z-10">
 //       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-//         <h1 className="text-2xl font-bold text-blue-500">Your Name</h1>
+//         <h1 className="text-2xl font-bold global-title-color">Your Name</h1>
 //         <ul className="flex space-x-6">
 //           {['about', 'experience', 'skills', 'projects', 'education', 'contact'].map((section) => (
 //             <li key={section}>
@@ -101,7 +102,7 @@ export default Navbar;
 //                 to={section}
 //                 smooth={true}
 //                 duration={500}
-//                 className="hover:text-blue-500 cursor-pointer capitalize text-lg"
+//                 className="hover:global-title-color cursor-pointer capitalize text-lg"
 //               >
 //                 {section}
 //               </Link>

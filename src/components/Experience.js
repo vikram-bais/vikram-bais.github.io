@@ -1,5 +1,6 @@
 
 import React from 'react';
+import '../App.css';
 
 function Experience() {
   const experiences = [
@@ -62,10 +63,10 @@ function Experience() {
 
   return (
     <section id="experience" className="py-20 max-w-6xl mx-auto px-4">
-      <h2 className="text-4xl font-bold text-blue-500 text-center mb-8">Experience</h2>
+      <h2 className="text-4xl font-bold global-title-color text-center mb-8">Experience</h2>
       <div className="py-10 space-y-6">
         {experiences.map((exp, index) => (
-          <div key={index} className="bg-gray-700 p-6 rounded-lg shadow-md hover:scale-105 transition">
+          <div key={index} className="background-card p-6">
             <h3 className="text-2xl font-semibold">{exp.role}</h3>
             <p className="text-lg text-blue-300">{exp.company} | {exp.period}</p>
             <p className="text-md text-gray-400">{exp.duration}</p>
