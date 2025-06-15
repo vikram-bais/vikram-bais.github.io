@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="bg-gray-900 text-gray-100 min-h-screen bg-animated-gradient">
+    <div className=" text-gray-100 min-h-screen bg-animated-gradient">
       <Navbar />
       <main>
         <About />

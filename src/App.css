@@ -4,6 +4,10 @@ body {
 }
 
 .bg-animated-gradient {
+  background-color: #1f2937;
+}
+
+/* .bg-animated-gradient {
   background: linear-gradient(45deg, #1f2937, #203d73, #1f2937, #1f2937);
   background-size: 400% 400%;
   animation: gradientFade 10s ease infinite;
@@ -19,7 +23,8 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
+
 
 .global-title-color {
   color: #3b82f6;
